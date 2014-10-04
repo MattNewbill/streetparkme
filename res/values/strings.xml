@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StreetParkMe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_parking_time_label">Restriction Time(leave blank if none): </string>
+    <string name="time_limit_label">Restriction Limit: </string>
+    <string name="permit_required_label">Permit Required? </string>
+    <string name="parking_spot_days_active_label">Parking Restriction Active on: </string>
+    <string name="minutes_label">minute(s)</string>
+    <string name="hours_label">hour(s)</string>
+    <string name="add_button_text">Add another restriction</string>
+    <string name="save_button_text">Save</string>
+    <string name="cost_per_hour">Cost Per Hour: </string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="2dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="2dp"
+    android:paddingStart="5dp"
+    android:paddingTop="6dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/add_restriction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_button_text" >
+        </Button>
+
+        <Button
+            android:id="@+id/save_restriction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_restriction_button"
+            android:text="@string/save_button_text" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

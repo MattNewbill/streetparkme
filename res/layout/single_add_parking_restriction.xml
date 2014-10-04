@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    android:paddingEnd="2dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="2dp"
+    android:paddingStart="5dp"
+    android:paddingTop="6dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/add_parking_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_parking_time_label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <DigitalClock
+            android:id="@+id/time_restriction_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:editable="true" >
+        </DigitalClock>
+
+        <DigitalClock
+            android:layout_marginLeft="15dp"
+            android:id="@+id/time_restriction_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time_restriction_from"
+            android:editable="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/time_limit_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_limit_label" />
+
+        <EditText
+            android:id="@+id/hour_time_limit_text"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hours_label"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/time_limit_label"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/hours_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hour_time_limit_text"
+            android:text="@string/hours_label" />
+
+        <EditText
+            android:id="@+id/minute_time_limit_text"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/minutes_label"
+            android:layout_toRightOf="@id/hours_label"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/minutes_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/minute_time_limit_text"
+            android:text="@string/minutes_label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <CheckBox
+            android:id="@+id/permit_required_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/permit_required_label" />
+
+        <TextView
+            android:id="@+id/permit_required_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/permit_required_label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/cost_per_hour_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cost_per_hour" />
+
+        <EditText
+            android:id="@+id/cost_per_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cost_per_hour_label"
+            android:inputType="numberDecimal" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/parking_spot_days_active_label" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <CheckBox
+            android:id="@+id/active_monday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/active_tuesday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_monday_checkbox" />
+
+        <CheckBox
+            android:id="@+id/active_wednesday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_tuesday_checkbox" />
+
+        <CheckBox
+            android:id="@+id/active_thursday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_wednesday_checkbox" />
+
+        <CheckBox
+            android:id="@+id/active_friday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_thursday_checkbox" />
+
+        <CheckBox
+            android:id="@+id/active_saturday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_friday_checkbox" />
+
+        <CheckBox
+            android:id="@+id/active_sunday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/active_saturday_checkbox" />
+    </RelativeLayout>
+
+</LinearLayout>
