@@ -14,11 +14,35 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp" >
 
-        <TextView
-            android:id="@+id/add_parking_time_label"
+        <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_parking_time_label" />
+            android:checked="true"
+            android:text="No Parking"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timed Parking"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unrestricted"
+            android:textSize="11sp" />
+    </RadioGroup>
+
     </RelativeLayout>
 
     <RelativeLayout
