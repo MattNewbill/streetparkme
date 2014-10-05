@@ -1,9 +1,16 @@
 package com.newbillity.objects;
 
+import java.io.Serializable;
+
 import android.R.bool;
 import android.text.format.Time;
 
-public class ParkingRestriction {
+@SuppressWarnings("serial")
+public class ParkingRestriction implements Serializable{
+	public final static int NOPARKING = 0;
+	public final static int TIMEDPARKING = 1;
+	public final static int UNRESTRICTED = 2;
+	private int parking_type;
 	private int id;
 	private double cost_per_hour;
 	private Time beg_time_restriction;

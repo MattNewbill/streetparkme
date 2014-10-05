@@ -1618,7 +1618,8 @@ containing a value of this type.
         public static final int activity_main=0x7f030019;
         public static final int scrollview=0x7f03001a;
         public static final int single_add_parking_restriction=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int single_add_parking_restriction2=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
